@@ -2,7 +2,7 @@
 
                            1. Meaning
                                      \
-                      2. Patterns -> 4. Values -> 5. Identity -> 6. Achievements
+                      2. Patterns -> 4. Values -> 5. Identity -> 6. Recognition
                                      /
                                      3. Consequences 
             
@@ -16,6 +16,12 @@
 
 ## Binary 5, 6
 - Truth; `friendship`, [ethics](https://www.youtube.com/watch?v=GLpbh5d3Hhg): Judeo-Christian
+
+                 1. Probabilistic
+                                 \
+             2. Neuronetworks -> 4. Central -> 5. Algorithms -> 6. Deterministic
+                                 /
+                                 3. Graphical 
 
 ```{figure} ./self-criticism.png
 ---

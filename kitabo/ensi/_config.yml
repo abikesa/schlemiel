@@ -5,10 +5,10 @@
 
 #######################################################################################
 # Book settings
-title                       : Music  # The title of the book. Will be placed in the left navbar.
-author                      : Dionysus  # The author of the book
-copyright                   : "2024"  # Copyright year to be placed in the footer
-logo                        : "https://static.dw.com/image/62054308_1004.webp"  # A path to the book logo
+title                       : Education  # The title of the book. Will be placed in the left navbar.
+author                      : CDP  # The author of the book
+copyright                   : "2025"  # Copyright year to be placed in the footer
+logo                        : "https://www.un.org/sites/un2.un.org/files/2024/01/un744683_d68-education.jpg"  # A path to the book logo
 email                       : "theturingway@gmail.com"
 exclude_patterns            : ["LICENSE.md"]  # Patterns to skip when building the book. Can be glob-style (for example "*skip.ipynb")
 
@@ -37,6 +37,15 @@ html:
     The Artist is the creator of beautiful things
   comments:
     hypothesis              : true
+  # ... other settings ...
+  extra_navbar: Visit our <a href="https://github.com/the-turing-way/the-turing-way">GitHub Repository</a>
+    <div>This book is powered by <a href="https://jupyterbook.org">Jupyter Book</a></div>
+  extra_footer: |
+    The Artist is the creator of beautiful things
+  comments:
+    hypothesis: true
+  extra_css:
+    - "_static/custom.css"
 
 #######################################################################################
 # Launch button settings

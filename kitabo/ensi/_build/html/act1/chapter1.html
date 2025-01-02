@@ -493,13 +493,13 @@ Planes cruising at 30,000 feet are typically mid-journey, so they are likely pas
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;Pre-Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span><span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">,</span> <span class="p">],</span>
         <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cinematograhy</span><span class="se">\n</span><span class="s1"> Journalism</span><span class="se">\n</span><span class="s1"> App/Observer&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Antagonists&#39;</span><span class="p">,</span> <span class="s1">&#39;Protagonists&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Antagonists/Default&#39;</span><span class="p">,</span> <span class="s1">&#39;Protagonists/Action&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;Sports&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Sports/Hellenism&#39;</span><span class="p">,</span>
             <span class="s1">&#39;Justify Life&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;Nature&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Nature/Judaism&#39;</span><span class="p">,</span>
         <span class="p">],</span>
-        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Meaningless&#39;</span><span class="p">,</span> <span class="s1">&#39;Tournament/Honor&#39;</span><span class="p">,</span> <span class="s1">&#39;Distraction&#39;</span><span class="p">,</span> <span class="s1">&#39;Catechism&#39;</span><span class="p">,</span> <span class="s1">&#39;Absurdity&#39;</span><span class="p">,</span>    <span class="p">]</span>
+        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Meaningless/Cheerful&#39;</span><span class="p">,</span> <span class="s1">&#39;Tournament/Honor&#39;</span><span class="p">,</span> <span class="s1">&#39;Distraction&#39;</span><span class="p">,</span> <span class="s1">&#39;Catechism&#39;</span><span class="p">,</span> <span class="s1">&#39;Absurdity/Fools Errand&#39;</span><span class="p">,</span>    <span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Define weights for the connections</span>
@@ -531,21 +531,21 @@ Planes cruising at 30,000 feet are typically mid-journey, so they are likely pas
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
     <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Protagonists&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Protagonists/Action&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Nature&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Nature/Judaism&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Justify Life&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sports&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sports/Hellenism&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Absurdity&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Absurdity/Fools Errand&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Catechism&#39;</span><span class="p">,</span> <span class="s1">&#39;Distraction&#39;</span><span class="p">,</span> <span class="s1">&#39;Tournament/Honor&#39;</span><span class="p">]:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Meaningless&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Meaningless/Cheerful&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color</span>
 
@@ -613,7 +613,7 @@ Planes cruising at 30,000 feet are typically mid-journey, so they are likely pas
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/cf755f130418fa8db0ba21e59f7a4b1d0ef34a31c5ff805f6bf3b4a0332c2f73.png" src="../_images/cf755f130418fa8db0ba21e59f7a4b1d0ef34a31c5ff805f6bf3b4a0332c2f73.png" />
+<img alt="../_images/d1a97fcb0f4dcc61f5ce57d1ab35143773506a79d2dbf957bba69ad2da8f1e27.png" src="../_images/d1a97fcb0f4dcc61f5ce57d1ab35143773506a79d2dbf957bba69ad2da8f1e27.png" />
 </div>
 </div>
 <figure class="align-default" id="id2">

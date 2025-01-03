@@ -422,7 +422,7 @@ document.write(`
 <span class="c1"># Define the neural network structure</span>
 <span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="s1">&#39;Pre-Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span><span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Tact&#39;</span><span class="p">,</span> <span class="s1">&#39;Firmness&#39;</span><span class="p">,</span> <span class="s1">&#39;Soundness&#39;</span><span class="p">,</span> <span class="p">],</span>
+        <span class="s1">&#39;Pre-Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span><span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Tact</span><span class="se">\n</span><span class="s1"> Critical&#39;</span><span class="p">,</span> <span class="s1">&#39;Sound</span><span class="se">\n</span><span class="s1"> Antiquarian&#39;</span><span class="p">,</span> <span class="s1">&#39;Firmness</span><span class="se">\n</span><span class="s1"> Monumental&#39;</span><span class="p">,],</span>
         <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Flow&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Stress&#39;</span><span class="p">,</span> <span class="s1">&#39;Apathy&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span> <span class="p">[</span>
@@ -460,7 +460,9 @@ document.write(`
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Flow&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
-    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Tact&#39;</span><span class="p">,</span> <span class="s1">&#39;Firmness&#39;</span><span class="p">,</span> <span class="s1">&#39;Soundness&#39;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Sound</span><span class="se">\n</span><span class="s1"> Antiquarian&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Firmness</span><span class="se">\n</span><span class="s1"> Monumental&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Apathy&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
@@ -540,7 +542,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/2db31bbe68e0cb840adedf66d41cdebe4a95e0859e4657ee7ac20bb528cfe557.png" src="../_images/2db31bbe68e0cb840adedf66d41cdebe4a95e0859e4657ee7ac20bb528cfe557.png" />
+<img alt="../_images/fabfdc084b1f612c90ce0463116c0e35c77d99d411dfc9121c7b30832611df1f.png" src="../_images/fabfdc084b1f612c90ce0463116c0e35c77d99d411dfc9121c7b30832611df1f.png" />
 </div>
 </div>
 <figure class="align-default" id="id1">
